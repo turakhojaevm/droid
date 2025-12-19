@@ -4,6 +4,7 @@ slides.forEach(className => {
     showSlides(slideIndex, className);
 });
 
+// Next/previous controls
 function priceListSlider(n) {
     showSlides(slideIndex += n, "mySlides");
 }
