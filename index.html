@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droid</title>
+
+    <!-- Подключение css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-items">О нас</li>
+                    <li class="menu-items">Услуги</li>
+                    <li class="menu-items">Отзывы</li>
+                    <li class="menu-items">Контакты</li>
+                    <li class="menu-items">Вакансии</li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <span>
+                    Телефон:+79273068586 <br>
+                    Почта: droid@droid.ru
+                </span>
+                <button>Заказать <br> звонок</button>
+            </div>
+            <div class="schedule">
+                <span>
+                    График работы: <br>
+                    пн - чт 8:00 - 18:00 <br>
+                    пт - сб 10:00 - 18:00 <br>
+                    Перерыв 12:00 - 13:00
+                </span>
+                <div class="schedule-social-media">
+                    <img src="./images/vk-com.png" alt="vk-com">
+                    <img src="./images/nav-telegram.png" alt="nav-telegram">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Блок о нас -->
+        <section class="about">
+            <div class="about-info">
+                <h2 class="about-title">О НАС</h2>
+                <p class="about-description">
+                    Компания "Дройд" находится в центре города и специализируется на ремонте мобильных телефонов,
+                    включая системы Android и iOS. С момента своего основания в 2015 году, специалисты компании
+                    занимаются устранением различных неисправностей, таких как замена дисплея, аккумулятора и обновление
+                    программного обеспечения. Клиенты выбирают "Дройд" за высокое качество услуг, быстрый сервис и
+                    внимательное отношение к каждому клиенту. Профессиональные мастера гарантируют эффективное
+                    восстановление работы вашего устройства.
+                </p>
+            </div>
+            <div class="about-image">
+                <img height="211" width="375" src="./images/about-image.png" alt="about-image">
+            </div>
+        </section>
+
+        <!-- Блок Услуги и Прайс лист -->
+        <section class="services-price-list">
+            <div class="container">
+                <h2 class="section-title">Услуги и Прайс лист</h2>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="services-price-list-item">
+                            <div class="services-price-list-content">
+                                <h4>Замена дисплейного модуля</h4>
+                                <h4>Это процедура, при которой <br> заменяется весь дисплей, <br> включая стекло,
+                                    сенсорный <br>
+                                    экран и матрицу.</h4>
+                                <h4>Цена: от 1000 руб.</h4>
+                            </div>
+                            <div class="services-price-list-image">
+                                <img height="294" src="./images/service-img-1.png" alt="service-img-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="services-price-list-item">
+                            <div class="services-price-list-content">
+                                <h4>Обновление программного обеспечения</h4>
+                                <h4>
+                                    Процесс внедрения новых <br>
+                                    функций, улучшений, <br>
+                                    исправлений ошибок для <br>
+                                    повышения его <br>
+                                    функциональности и <br>
+                                    производительности.
+                                </h4>
+                                <h4>Цена: от 600 руб.</h4>
+                            </div>
+                            <div class="services-price-list-image">
+                                <img height="294" src="./images/service-img-2.png" alt="service-img-2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="services-price-list-item">
+                            <div class="services-price-list-content">
+                                <h4>Чистка от коррозии после <br> попадания жидкости</h4>
+                                <h4>Это процедура, которая <br>
+                                    выполняется с целью <br>
+                                    предотвращения и <br>
+                                    устранения коррозии, <br>
+                                    вызванной воздействием <br>
+                                    влаги или влажной среды на <br>
+                                    компоненты устройства.
+                                </h4>
+                                <h4>Цена: от 700 руб.</h4>
+                            </div>
+                            <div class="services-price-list-image">
+                                <img height="294" src="./images/service-img-3.png" alt="service-img-3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="priceListSlider(-1)"><img src="./images/prev.png" alt="prev"></a>
+                    <a class="next" onclick="priceListSlider(1)"><img src="./images/next.png" alt="next"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок Наши отзывы -->
+        <section class="review">
+            <h2 class="section-title">Наши отзывы</h2>
+            <div class="slideshow-container">
+                <div class="reviewSlides fade">
+                    <div class="review-item">
+                        <div class="review-item-image">
+                            <img width="82" height="83" src="./images/review-img-1.png" alt="review-img-1">
+                        </div>
+                        <div class="review-info">
+                            <h5 class="review-info-title">
+                                Анастасия
+                                <img src="./images/review-img-rating.png" alt="review-img-rating">
+                            </h5>
+                            <p class="review-info-description">
+                                Качественно, в короткие сроки заменили дисплей в этом сервисном центре. Вежливое,
+                                профессиональное обслуживание. <br> Приятным бонусом был подарок за обращение в центр.
+                                Рекомендую!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviewSlides fade">
+                    <div class="review-item">
+                        <div class="review-item-image">
+                            <img height="83" src="./images/review-img-2.png" alt="review-img-2">
+                        </div>
+                        <div class="review-info">
+                            <h5 class="review-info-title">
+                                Вячеслав
+                                <img src="./images/review-img-rating.png" alt="review-img-rating">
+                            </h5>
+                            <p class="review-info-description">
+                                Сдал на ремонт свой айфон. Он перестал включатся. Я уже начал переживать. Ведь мне
+                                понадобилось <br>
+                                высококвалифицированный специалист, который делает ремонт aйфонов. Ребята сделали все
+                                просто шикарно. Молодцы!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviewSlides fade">
+                    <div class="review-item">
+                        <div class="review-item-image">
+                            <img height="83" src="./images/review-img-3.png" alt="review-img-3">
+                        </div>
+                        <div class="review-info">
+                            <h5 class="review-info-title">
+                                Константин
+                                <img src="./images/review-img-rating.png" alt="review-img-rating">
+                            </h5>
+                            <p class="review-info-description">
+                                Отлично место для ремонта и обслуживания телефонов. Специалист Марсель обо всем
+                                интересно и грамотно <br>
+                                рассказывает. Уже приходил сюда 3 раза.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="reviewSlider(-1)"><img src="./images/prev.png" alt="prev"></a>
+                <a class="next" onclick="reviewSlider(1)"><img src="./images/next.png" alt="next"></a>
+            </div>
+
+        </section>
+
+        <!-- Блок Наши результаты -->
+        <section class="results">
+            <div class="container">
+                <h2 class="section-title">Наши результаты</h2>
+                <div class="slideshow-container">
+                    <div class="resultSliders fade">
+                        <div class="results-items">
+                            <img src="./images/result-img-1.png" alt="result-img-1">
+                            <img src="./images/result-img-2.png" alt="result-img-2">
+                        </div>
+                    </div>
+                    <div class="resultSliders fade">
+                        <div class="results-items">
+                            <img src="./images/result-img-3.png" alt="result-img-3">
+                            <img src="./images/result-img-4.png" alt="result-img-4">
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="resultsSlider(-1)"><img src="./images/prev.png" alt="prev"></a>
+                    <a class="next" onclick="resultsSlider(1)"><img src="./images/next.png" alt="next"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Блок Подвал -->
+    <footer>
+        <div class="footer-list">
+            <div class="contact">
+                <h4>Контактная информация</h4>
+                <h5>11256, г.Москва, ул. Окт-ская 45</h5>
+            </div>
+            <div class="phone-number">
+                <h5>+7(967)584-35-41</h5>
+                <h5>+7(987)612-85-77</h5>
+                <h5>droid@droid.com</h5>
+            </div>
+            <div class="social-media">
+                <h4>Мы в социальных сетях</h4>
+                <div class="social-media-list">
+                    <img src="./images/vk.png" alt="vk">
+                    <img src="./images/telegram.png" alt="telegram">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
