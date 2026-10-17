@@ -1,0 +1,271 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Политика конфиденциальности «Найди слово»</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root{
+    --bg:#f5f7f6;
+    --surface:#ffffff;
+    --surface-2:#edf2f0;
+    --text:#151a18;
+    --text-muted:#5a655f;
+    --border:#dde4e1;
+    --accent:#0f7d6c;
+    --accent-strong:#0b5f52;
+    --accent-soft:#dcf0ea;
+    --shadow: 0 1px 2px rgba(15,30,25,.04), 0 8px 24px rgba(15,30,25,.05);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#101614;
+      --surface:#161d1a;
+      --surface-2:#1c2521;
+      --text:#eef3f0;
+      --text-muted:#9db0a8;
+      --border:#293530;
+      --accent:#3fcbab;
+      --accent-strong:#6fe0c4;
+      --accent-soft:#17322b;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#101614;
+    --surface:#161d1a;
+    --surface-2:#1c2521;
+    --text:#eef3f0;
+    --text-muted:#9db0a8;
+    --border:#293530;
+    --accent:#3fcbab;
+    --accent-strong:#6fe0c4;
+    --accent-soft:#17322b;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:"IBM Plex Sans", system-ui, sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    padding-inline:20px;
+    padding-block:48px 64px;
+  }
+  h1,h2{
+    font-family:"Manrope", system-ui, sans-serif;
+    text-wrap:balance;
+    letter-spacing:-.01em;
+  }
+  .wrap{
+    max-width:700px;
+    margin-inline:auto;
+  }
+
+  /* header */
+  .head{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-bottom:36px;
+  }
+  .eyebrow{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--accent-strong);
+  }
+  h1{
+    font-size:clamp(28px,5vw,38px);
+    font-weight:800;
+    margin:0;
+  }
+  .meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 22px;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12.5px;
+    color:var(--text-muted);
+  }
+  .meta b{ color:var(--text); font-weight:500; }
+
+  /* word-grid motif */
+  .grid-motif{
+    display:grid;
+    grid-template-columns:repeat(8,1fr);
+    gap:4px;
+    max-width:340px;
+    margin-top:4px;
+  }
+  .grid-motif span{
+    aspect-ratio:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    font-weight:500;
+    color:var(--text-muted);
+    background:var(--surface-2);
+    border-radius:4px;
+  }
+  .grid-motif span.hit{
+    background:var(--accent);
+    color:var(--surface);
+    font-weight:600;
+  }
+
+  /* summary callout */
+  .summary{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-left:3px solid var(--accent);
+    border-radius:10px;
+    padding:20px 22px;
+    box-shadow:var(--shadow);
+    margin-bottom:8px;
+  }
+  .summary p{ margin:0 0 8px; }
+  .summary p:last-child{ margin-bottom:0; }
+  .summary strong{ color:var(--accent-strong); }
+
+  /* sections */
+  section{
+    padding-block:30px;
+    border-bottom:1px solid var(--border);
+  }
+  section:last-of-type{ border-bottom:none; }
+  .num{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12.5px;
+    color:var(--accent-strong);
+    letter-spacing:.06em;
+  }
+  h2{
+    font-size:21px;
+    font-weight:700;
+    margin:4px 0 12px;
+  }
+  p{ margin:0 0 12px; color:var(--text); }
+  p.muted{ color:var(--text-muted); }
+  ul{ margin:0 0 12px; padding-left:20px; }
+  li{ margin-bottom:6px; }
+  li::marker{ color:var(--accent-strong); }
+
+  .badge-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:14px 0 4px;
+  }
+  .badge{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    padding:6px 10px;
+    border-radius:20px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    color:var(--text-muted);
+  }
+  .badge.no::before{ content:"— "; color:var(--accent-strong); font-weight:600; }
+
+  footer{
+    margin-top:40px;
+    padding-top:28px;
+    border-top:1px solid var(--border);
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    font-size:14.5px;
+    color:var(--text-muted);
+  }
+  footer a{ color:var(--accent-strong); text-decoration:none; }
+  footer a:hover{ text-decoration:underline; }
+
+  @media (max-width:480px){
+    .grid-motif{ max-width:260px; }
+  }
+</style>
+
+<div class="wrap">
+  <div class="head">
+    <div class="eyebrow">Политика конфиденциальности</div>
+    <h1>«Викторина: Найди слово»</h1>
+    <div class="meta">
+      <span>Разработчик: <b>khujand221@gmail.com</b></span>
+      <span>Действует с: <b>16 сентября 2026 г.</b></span>
+      <span>Пакет: <b>dev.turakhojaevm.quizfindword</b></span>
+    </div>
+    <div class="grid-motif" aria-hidden="true">
+      <span>к</span><span>в</span><span class="hit">и</span><span class="hit">г</span><span class="hit">р</span><span class="hit">а</span><span>ю</span><span>т</span>
+      <span>с</span><span class="hit">н</span><span>ц</span><span>ь</span><span>ф</span><span>ш</span><span>щ</span><span>э</span>
+      <span>л</span><span class="hit">а</span><span>б</span><span class="hit">с</span><span class="hit">л</span><span class="hit">о</span><span class="hit">в</span><span class="hit">о</span>
+    </div>
+  </div>
+
+  <div class="summary">
+    <p><strong>Коротко:</strong> приложение работает полностью офлайн. Оно не собирает, не хранит на серверах и не передаёт третьим лицам никакие персональные данные.</p>
+    <p>Весь прогресс, счёт и настройки хранятся только на вашем устройстве. Приложение не содержит рекламы, аналитики и внутренних покупок.</p>
+  </div>
+
+  <section id="data">
+    <div class="num">01</div>
+    <h2>Какие данные собирает приложение</h2>
+    <p>«Викторина: Найди слово» — офлайн-игра. Приложение не запрашивает имя, e-mail, номер телефона, геолокацию и не создаёт учётную запись. Мы не собираем персональные данные, потому что нам они не нужны для работы игры.</p>
+    <p class="muted">Приложение использует только встроенную базу данных SQLite для хранения слов, вопросов и результатов игры локально на устройстве.</p>
+  </section>
+
+  <section id="permissions">
+    <div class="num">02</div>
+    <h2>Разрешения и доступ к устройству</h2>
+    <p>Приложение не запрашивает доступ к камере, микрофону, геолокации, контактам, галерее или другим личным данным устройства.</p>
+    <div class="badge-row">
+      <span class="badge no">Камера</span>
+      <span class="badge no">Геолокация</span>
+      <span class="badge no">Контакты</span>
+      <span class="badge no">Микрофон</span>
+      <span class="badge no">Аккаунты</span>
+    </div>
+  </section>
+
+  <section id="storage">
+    <div class="num">03</div>
+    <h2>Где и как хранятся данные</h2>
+    <p>Прогресс прохождения, набранные очки и настройки игры сохраняются локально в базе данных на вашем устройстве (технология SQLite). Эти данные никуда не отправляются и недоступны разработчику.</p>
+    <p>При удалении приложения все локально сохранённые данные удаляются вместе с ним.</p>
+  </section>
+
+  <section id="third-party">
+    <div class="num">04</div>
+    <h2>Реклама, аналитика и сторонние сервисы</h2>
+    <p>В приложении нет рекламных модулей, систем аналитики, трекинга и сторонних SDK, которые собирали бы данные о вас или вашем устройстве. Приложение не подключается к внешним серверам для передачи пользовательских данных.</p>
+  </section>
+
+  <section id="children">
+    <div class="num">05</div>
+    <h2>Дети и конфиденциальность</h2>
+    <p>Приложение подходит для широкой аудитории, включая детей, и не собирает никаких персональных данных ни от одной возрастной группы, включая пользователей младше 13 лет.</p>
+  </section>
+
+  <section id="changes">
+    <div class="num">06</div>
+    <h2>Изменения политики</h2>
+    <p>Мы можем обновлять эту политику при изменении функциональности приложения. Дата последнего обновления всегда указана в шапке страницы. Рекомендуем периодически проверять эту страницу.</p>
+  </section>
+
+  <section id="contact">
+    <div class="num">07</div>
+    <h2>Контакты</h2>
+    <p>По вопросам, связанным с этой политикой конфиденциальности, свяжитесь с разработчиком по электронной почте.</p>
+  </section>
+
+  <footer>
+    <span>«Викторина: Найди слово» · dev.turakhojaevm.quizfindword</span>
+    <span>Разработчик: <a href="mailto:khujand221@gmail.com">khujand221@gmail.com</a></span>
+  </footer>
+</div>
+
+</body></html>
